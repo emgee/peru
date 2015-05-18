@@ -60,7 +60,8 @@ class Runtime:
             self.sync_dir = explicit_sync_dir
         else:
             self.peru_file = find_peru_file(
-                os.getcwd(), parser.DEFAULT_PERU_FILE_NAME)
+                os.getcwd(),
+                args['--peru-default'] or parser.DEFAULT_PERU_FILE_NAME)
             self.sync_dir = os.path.dirname(self.peru_file)
         self.state_dir = (getter.get('--state-dir', 'PERU_STATE_DIR') or
                           os.path.join(self.sync_dir, '.peru'))

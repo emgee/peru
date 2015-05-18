@@ -19,7 +19,7 @@ from .runtime import Runtime
 __doc__ = '''\
 Usage:
     peru [-hqv] [--peru-file=PATH] [--sync-dir=PATH] [--state-dir=PATH]
-         [--cache-dir=PATH] <command> [<args>...]
+         [--cache-dir=PATH] [--peru-default=NAME] <command> [<args>...]
     peru [--help|--version]
 
 Commands:
@@ -31,16 +31,17 @@ Commands:
     help      show help for subcommands, same as -h/--help
 
 Options:
-    --cache-dir=PATH  custom location for peru's cache, normally
-                      .peru/cache
-    -h --help         so much help
-    --peru-file=PATH  explicit path to peru.yaml
-    -q --quiet        don't print anything
-    --state-dir=PATH  custom location for various peru metadata, which
-                      normally lives in .peru
-    --sync-dir=PATH   explicit path to where your imports go, normally
-                      the directory containing peru.yaml
-    -v --verbose      print everything
+    --cache-dir=PATH     custom location for peru's cache, normally
+                         .peru/cache
+    -h --help            so much help
+    --peru-file=PATH     explicit path to peru.yaml
+    --peru-default=NAME  filename to look for instead of 'peru.yaml'
+    -q --quiet           don't print anything
+    --state-dir=PATH     custom location for various peru metadata, which
+                         normally lives in .peru
+    --sync-dir=PATH      explicit path to where your imports go, normally
+                         the directory containing peru.yaml
+    -v --verbose         print everything
 '''
 
 
