@@ -80,7 +80,7 @@ test_script:
   - "t.py"
   - "echo setting now"
   - "assoc .py=Python.File"
-  - 'ftype Python.File=%PYTHON%\pythonw.exe "%%%%1" %%%%*'
+  - 'ftype Python.File=%PYTHON%\python.exe "%%%%1" %%%%*'
   - "assoc"
   - "ftype"
   - "echo here's t"
