@@ -72,4 +72,4 @@ build_script:
   - "echo NO-OP"
 
 test_script:
-  - "%CMD_IN_ENV% python test.py"
+  - "%CMD_IN_ENV% python test.py -v test_plugins.PluginsTest.test_curl_plugin_reup"
