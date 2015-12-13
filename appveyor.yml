@@ -76,5 +76,5 @@ test_script:
   # but peru's plugins require this. Set it up manually.
   - "echo setting now"
   - "assoc .py=Python.File"
-  - 'ftype Python.File=%PYTHON%\python.exe "%%%%1" %%%%*'
+  - 'ftype Python.File=%PYTHON%\pythonw.exe "%%%%1" %%%%*'
   - "%CMD_IN_ENV% python test.py -v test_plugins.PluginsTest.test_curl_plugin_reup"
